@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang ='en'>
     <head>
         <meta charset = "utf-8">
@@ -13,6 +13,8 @@
         <!-- add CSS-->
         <link rel="stylesheet" href="style.css">
     </head>
+
+<body>
 <header>
     <section class="section2">
         <div>
@@ -20,7 +22,6 @@
             <h2>(not associated with Domino's)</h2>
         </div>
     </section>
-            
                 <div>
                     <nav>
                         <menu>
@@ -50,31 +51,29 @@
                 </div>
         </header>
 
-
-<body>
-    <pizza>
+<!-- example php -->
+<!-- post is used to SEND data to the server-->
+<!--this enctype is used for simple form data, not including binary-->           
+<form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded">        
+<main>
         <!--setting up a class for styling ease-->
         <section class="pepPizza">
         <div>
             <!--Title and description go in this div-->
             <h2 id="peppPizza">Pepperoni Pizza</h2>
-            <h4><p>Our classic pepperoni pizza is made from our hand tossed dough and slathered with a generous helping of our house made
+            <h4>Our classic pepperoni pizza is made from our hand tossed dough and slathered with a generous helping of our house made
         marinara sauce. It is then topped with freshly cut pepperoni and sprinkled with authentic mozzarella cheese. After being crisped to perfection,
         we garnish it with basil, oregano, and parsley.
-            </h4></p>
+          </h4>
         </div>
         <div>    
             <img src="./images/pepPizza.jpg" alt="Pepperoni Pizza">
         </div>
-            <!-- example php -->
-            <!-- post is used to SEND data to the server-->
-            <!--this enctype is used for simple form data, not including binary--> 
-        <div>
-            <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
+            <div>
             <h3>Select size</h3>
-            <label for="size"></label>
+            <label for="pepSize"></label>
             <!--select is a drop down html element-->    
-            <select id="size" name="size">
+            <select id="pepSize" name="pepSize">
                 <option value="">Choose a size</option>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
@@ -92,24 +91,23 @@
                     <label for="large">Large</label>    
                 <br>
             -->
-                <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
             <h3>Select toppings</h3>
-                <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
-                    <label for="pepperoni">Pepperoni</label>
-                <input type="checkbox" id="onions" name="topping" value="onions">
-                    <label for="onions">Onions</label>
-                <input type="checkbox" id="peppers" name="topping" value="peppers">
-                    <label for="onions">Peppers</label>
-                <input type="checkbox" id="bacon" name="topping" value="bacon">
-                    <label for="bacon">Bacon</label>
-                <input type="checkbox" id="olives" name="topping" value="olives">
-                    <label for="olives">Olives</label>
-                <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
-                    <label for="mushrooms">Mushrooms</label>
-            <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
+                <input type="checkbox" id="p.pepperoni" name="topping" value="p.pepperoni">
+                    <label for="p.pepperoni">Pepperoni</label>
+                <input type="checkbox" id="p.onions" name="topping" value="p.onions">
+                    <label for="p.onions">Onions</label>
+                <input type="checkbox" id="p.peppers" name="topping" value="p.peppers">
+                    <label for="p.peppers">Peppers</label>
+                <input type="checkbox" id="p.bacon" name="topping" value="p.bacon">
+                    <label for="p.bacon">Bacon</label>
+                <input type="checkbox" id="p.olives" name="topping" value="p.olives">
+                    <label for="p.olives">Olives</label>
+                <input type="checkbox" id="p.mushrooms" name="topping" value="p.mushrooms">
+                    <label for="p.mushrooms">Mushrooms</label>
+            
             <h3>How many do you want? (It's ok we don't judge)</h3>
-            <select id="quantity" name="quantity">
-                <option value=""></option>
+            <select id="pepQuantity" name="pepQuantity">
+                <option value="">--</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -123,44 +121,44 @@
     <section class="cheesePizza">
         <div>
             <h2 id="cheesePizza">Cheese pizza</h2>
-            <h4><p>Our quattro formaggi pizza will satisfy even the most ravenous cheese enthusiasts out there.
+            <h4>Our quattro formaggi pizza will satisfy even the most ravenous cheese enthusiasts out there.
                 We use only quality cheeses on this mouth-watering creation. There is nothing cheesy about our choice
                 of cheeses for this delicacy. We top this pizza with mozzarella, fontina, feta, and parmesan cheese. Go ahead
                 and dig into the stringy, cheesy goodness of this scrumptious dish. 
-            </p></h4>
+            </h4>
         </div>
         <div>    
             <img src="./images/cheese-pizza.jpg" alt="Cheese Pizza">
         </div>
         <div>
-            <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
+            
             <h3>Select Size</h3>
-                <label for="size"></label>
-                <select id="size" name="size">
+                <label for="cheeseSize"></label>
+                <select id="cheeseSize" name="cheeseSize">
                     <option value="">Choose a size</option>
                     <option value="small">Small</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
                 </select>   
                 <br> 
-            <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
+            
             <h3>Select toppings</h3>
-                <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
-                    <label for="pepperoni">Pepperoni</label>
-                <input type="checkbox" id="onions" name="topping" value="onions">
-                    <label for="onions">Onions</label>
-                <input type="checkbox" id="peppers" name="topping" value="peppers">
-                    <label for="onions">Peppers</label>
-                <input type="checkbox" id="bacon" name="topping" value="bacon">
-                    <label for="bacon">Bacon</label>
-                <input type="checkbox" id="olives" name="topping" value="olives">
-                    <label for="olives">Olives</label>
-                <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
-                    <label for="mushrooms">Mushrooms</label> 
-                <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
+                <input type="checkbox" id="c.pepperoni" name="topping" value="c.pepperoni">
+                    <label for="c.pepperoni">Pepperoni</label>
+                <input type="checkbox" id="c.onions" name="topping" value="c.onions">
+                    <label for="c.onions">Onions</label>
+                <input type="checkbox" id="c.peppers" name="topping" value="c.peppers">
+                    <label for="c.peppers">Peppers</label>
+                <input type="checkbox" id="c.bacon" name="topping" value="c.bacon">
+                    <label for="c.bacon">Bacon</label>
+                <input type="checkbox" id="c.olives" name="topping" value="c.olives">
+                    <label for="c.olives">Olives</label>
+                <input type="checkbox" id="c.mushrooms" name="topping" value="c.mushrooms">
+                    <label for="c.mushrooms">Mushrooms</label> 
+                
                 <h3>How many do you want? (It's ok we don't judge)</h3>
-                <select id="quantity" name="quantity">
-                    <option value=""></option>
+                <select id="cheeseQuantity" name="cheeseQuantity">
+                    <option value="">--</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -174,42 +172,41 @@
         <section class="vegPizza">
             <div>
                 <h2 id="vegPizza">Vegetarian Pizza</h2>
-                <h4><p>Don't eat meat? Fret not, we have what you're craving. Our veggie pizza has the freshest produce around. We start,
+                <h4>Don't eat meat? Fret not, we have what you're craving. Our veggie pizza has the freshest produce around. We start,
                     as always, with our hand tossed dough and slather generous portions of our famous marinara sauce. Then we top it with mouth
-                    watering peppers, mozzarella, mushrooms, and olives. We also have non-dairy cheese available for any vegan patrons!</p></h4>
+                    watering peppers, mozzarella, mushrooms, and olives. We also have non-dairy cheese available for any vegan patrons!</h4>
             </div>
             <div>
                 <img src="./images/veg-pizza.jpg" alt="Veggie Pizza">
             </div>
             <div>
-                <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
+                
                 <h3>Select Size</h3>
-                    <label for="size"></label>
-                    <select id="size" name="size">
+                    <label for="vegSize"></label>
+                    <select id="vegSize" name="vegSize">
                         <option value="">Choose a size</option>
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
                     </select>   
                     <br>
-                <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
+                
                 <h3>Select toppings</h3>
-                    <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
-                        <label for="pepperoni">Pepperoni</label>
-                    <input type="checkbox" id="onions" name="topping" value="onions">
-                        <label for="onions">Onions</label>
-                    <input type="checkbox" id="peppers" name="topping" value="peppers">
-                        <label for="onions">Peppers</label>
-                    <input type="checkbox" id="bacon" name="topping" value="bacon">
-                        <label for="bacon">Bacon</label>
-                    <input type="checkbox" id="olives" name="topping" value="olives">
-                        <label for="olives">Olives</label>
-                    <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
-                        <label for="mushrooms">Mushrooms</label>
-                    <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
+                    <input type="checkbox" id="v.pepperoni" name="topping" value="v.pepperoni">
+                        <label for="v.pepperoni">Pepperoni</label>
+                    <input type="checkbox" id="v.onions" name="topping" value="v.onions">
+                        <label for="v.onions">Onions</label>
+                    <input type="checkbox" id="v.peppers" name="topping" value="v.peppers">
+                        <label for="v.peppers">Peppers</label>
+                    <input type="checkbox" id="v.bacon" name="topping" value="v.bacon">
+                        <label for="v.bacon">Bacon</label>
+                    <input type="checkbox" id="v.olives" name="topping" value="v.olives">
+                        <label for="v.olives">Olives</label>
+                    <input type="checkbox" id="v.mushrooms" name="topping" value="v.mushrooms">
+                        <label for="v.mushrooms">Mushrooms</label>
                     <h3>How many do you want? (It's ok we don't judge)</h3>
-                    <select id="quantity" name="quantity">
-                        <option value=""></option>
+                    <select id="vegQuantity" name="vegQuantity">
+                        <option value="">--</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -217,9 +214,9 @@
                         <option value="5">5</option>
                     </select>     
                 </div>      
-        </section>            
-</pizza>
-</body>
+        </section>  
+    </main>         
+
 
 
 <footer>
@@ -229,22 +226,23 @@
 
     <!--This is where the user would input their info for delivery purposes-->
     <div>
-        <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded"></form>
+        
             <p><input type ="text" placeholder="* Your Name" name="fullname" required></p>
             <p><input type="email" placeholder="* ABC@gmail.com" name="email" required></p>
             <p><input type="text" placeholder="* delivery address" name="address"></p>
-        </form>
     </div>
 
+
     <div>
-        <a href="#" class="order-btn">SUBMIT ORDER</a>
+        <button type="submit">SUBMIT ORDER</button>
     </div> 
 
     <!--The Tobey Maguire Spiderman movies were so bad that they were good. You cannot change my mind on this-->
     <div>
         <img src="./images/pizza-time.jpg" alt="Footer logo">
     </div>
-</footer>       
+</footer>  
+</form>     
    
-
+</body>
 </html>
