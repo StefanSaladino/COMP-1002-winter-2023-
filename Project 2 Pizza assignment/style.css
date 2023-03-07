@@ -8,7 +8,6 @@ h1{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     text-align: center;
-    text-justify: center;
 }
 
 h2, h3, h4, h5, h6{
@@ -86,11 +85,6 @@ header{
     position: relative;
 }
 
-.section2 h1{
-text-align: center;
-text-justify: center;
-}
-
 header .section2 div h2{
 text-align: right;
 }
@@ -100,12 +94,6 @@ text-align: right;
         bottom: 0;
         left: 0;
       }
-
-
-/*header div{
-    flex-grow: 1;
-    height: 80px;
-}*/
 
 
 header nav menu{
@@ -141,18 +129,18 @@ header nav menu li a{
     border-radius: 3px;
 }
 
-body pizza .pepPizza {
+body main .pepPizza {
     padding: 15px;
     background-color: bisque;
 }
 
-body pizza .pepPizza h2{
+body main .pepPizza h2{
     font-size: 1.5em;
     text-align: right;
 }
 
-body pizza .pepPizza h4{
-    font-size: 1em;
+body main .pepPizza h4{
+    font-size: 1.5em;
     text-align: right;
     top: 100%;
 }
@@ -184,7 +172,7 @@ body pizza .pepPizza h4{
     grid-template-rows: auto;
   }
 
-body pizza .cheesePizza{
+body main .cheesePizza{
     padding: 15px;
     background-color: #839104;
 }
@@ -196,13 +184,13 @@ body pizza .cheesePizza{
     border-radius: 3px;
 }
 
-body pizza .cheesePizza h2{
+body main .cheesePizza h2{
     font-size: 1.5em;
     text-align: left;
 }
 
-body pizza .cheesePizza h4{
-    font-size: 1em;
+body main .cheesePizza h4{
+    font-size: 1.5em;
     text-align: left;
 }
 
@@ -228,18 +216,18 @@ I moved the image to the right and text to the left in this one*/
 
 /*styling the veggie pizza class*/
 /*implementing a grid for this class*/
-body pizza .vegPizza{
+body main .vegPizza{
     padding: 15px;
     background-color: #0cf361;
 }
 
-body pizza .vegPizza h2{
+body main .vegPizza h2{
     font-size: 1.5em;
     text-align: right;
 }
 
-body pizza .vegPizza h4{
-    font-size: 1em;
+body main .vegPizza h4{
+    font-size: 1.5em;
     text-align: right;
 }
 
@@ -278,14 +266,14 @@ body pizza .vegPizza h4{
 footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 20% 50% 30%;
 }
 
 footer{
     padding: 5px;
     background-color: #0e0e0e;
     color: #f4f4f4;
-    height: 75vh;
+    height: 60vh;
 }
 
 footer h3{
@@ -304,27 +292,28 @@ footer div:nth-child(2) form input{
     width: 100%;
 }
 
-footer .order-btn{
+footer button{
     border: solid 2px rgb(232, 9, 228);
     border-radius: 3px;
-    padding-right: 20px;
     background-color: #f4f4f4;
     color: #0e0e0e;
 }
 
-footer div:nth-child(1){
+footer div h3{
     grid-row: 1;
     grid-column: 1;
 }
 
 footer div:nth-child(2){
-    grid-row: 2;
+    grid-row: 2/4;
     grid-column: 1;
+    justify-content: start;
 }
 
 footer div:nth-child(3){
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 1;
+    align-content: end;
 }
 
 footer div:nth-child(4){
