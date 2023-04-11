@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--meta loaded using JS-->
+
+<head id="meta">
+    <title>Lite Brite Retro Website</title>
+    <meta name="description" content="Page with the company contact info">
+    <!--Add JS-->
+    <script src="./JS/custom-js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!--header loaded using JS-->
+    <header id="global-header">
+    </header>
+    <main id="contact-main">
+        <div>
+            <h2>CONTACT US</h2>
+        </div>
+
+        <section class="phone">
+            <div>
+                Phone: 555-555-5555
+            </div>
+            <div>
+                Fax: 555-555-5555
+            </div>
+        </section>
+        <!--giving the user an opportunity to contact the company directly-->
+        <section class="user-contact-info">
+            <h3>Drop Us A Line (We'd love to hear from you)</h3>
+            <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded">
+                <div class="form-2">
+                    <div><input type="text" placeholder="* Your Name" name="fullname" required></div>
+                    <div><input type="email" placeholder="* ABC@gmail.com" name="email" required></div>
+                    <!--text area is a more suitable input option for composing a message-->
+                    <div><textarea placeholder="* Your message" name="message"></textarea></div>
+                    <div>
+                        <button type="submit">SEND MESSAGE</button>
+                    </div>
+            </form>
+        </section>
+    </main>
+    <!--footer will be added with JS-->
+    <footer id="global-footer"></footer>
+</body>
+
+</html>

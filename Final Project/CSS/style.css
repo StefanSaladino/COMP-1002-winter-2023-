@@ -1,0 +1,606 @@
+/*no margins in the documents*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*adding a background image to the header*/
+header {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+}
+
+/*all paragraphs in the document will have this font unless specified otherwise*/
+p {
+    font-family: 'roboto', sans-serif;
+}
+
+/*div 1 will be a flex container*/
+header div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+}
+
+/*styling anchor logo*/
+header div:nth-child(1) img {
+    width: 100px;
+    height: auto;
+}
+
+header div:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+}
+
+/*styling h1*/
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    text-shadow: 0 0 10px blue;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*styling the navigation menu*/
+header nav menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav menu li {
+    display: inline-block;
+    margin: 5px;
+}
+
+header nav menu li a {
+    border-width: solid 2px white;
+    border-radius: 5px;
+    background-color: blue;
+    color: aqua;
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/*Styling for index*/
+.index-main {
+    margin: 0;
+    background: rgb(149, 14, 196);
+    background: linear-gradient(0deg, rgba(251, 250, 246, 0.980071252133666) 0%, rgba(149, 14, 196, 1) 100%);
+    background-size: cover;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+.index-main p {
+    color: beige;
+    font-size: 20px;
+    text-align: center;
+}
+
+.index-main div:nth-child(4) p {
+    color: rgb(149, 14, 196);
+}
+
+.index-main h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: blueviolet;
+    border: solid 4px rgb(94, 4, 102);
+    border-radius: 100px;
+    font-size: 35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+
+
+/*styling for about page*/
+.about-main {
+    background: rgb(245, 238, 247);
+    background: linear-gradient(0deg, rgba(245, 238, 247, 1) 0%, rgba(190, 217, 249, 1) 50%);
+    background-repeat: no-repeat;
+    height: 720px;
+    background-attachment: fixed;
+    padding: 5px;
+    height: auto;
+    width: auto;
+}
+
+.about-main p {
+    font-size: 20px;
+    color: grey;
+    padding: 20px;
+}
+
+.about-main h2 {
+    font-size: 60px;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: violet;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-align: center;
+}
+
+/*styling the accordion header*/
+.accordion-header {
+    border: solid 3px azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*adding the image to the accordion header*/
+.accordion-header img {
+    height: 30px;
+    width: auto;
+    display: inline-block;
+}
+
+/*will not display unless clicked. See JS*/
+.accordion .accordion-body {
+    display: none;
+    padding: 10px;
+}
+
+
+.about-main h3 {
+    font-size: 50px;
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: violet;
+    display: block;
+}
+
+/*styling product page*/
+.main-product h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button.cart img {
+    height: 10px;
+    width: auto;
+    border: none;
+    border-radius: 0px;
+}
+
+/*grid for product 1*/
+.LB-Original {
+    display: grid;
+    height: auto;
+    width: auto;
+    padding: 50px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 10% 55% 35%);
+    background-color: rgba(217, 200, 200, 0.1);
+}
+
+.LB-Original div:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: left;
+}
+
+.LB-Original div:nth-child(1) div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.LB-Original img {
+    height: 200px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 300px;
+
+}
+
+.LB-Original div:nth-child(2) {
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    align-items: center;
+    justify-items: center;
+}
+
+.LB-Original div:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1;
+    text-justify: left;
+    align-self: flex-end;
+}
+
+
+.LB-Original div:nth-child(4) {
+    grid-row: 3;
+    grid-column: 1;
+
+    align-self: flex-start;
+}
+
+/*grid for product 2*/
+.LB-Mini {
+    display: grid;
+    height: auto;
+    width: auto;
+    padding: 50px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 10% 60% 30%);
+    background-color: rgb(188, 183, 183);
+}
+
+.LB-Mini div:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: left;
+}
+
+.LB-Mini div:nth-child(1) div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.LB-Mini img {
+    height: 200px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 300px;
+
+}
+
+.LB-Mini div:nth-child(2) {
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    align-items: center;
+    justify-items: center;
+}
+
+.LB-Mini div:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1;
+    text-justify: left;
+    align-self: flex-end;
+}
+
+
+.LB-Mini div:nth-child(4) {
+    grid-row: 3;
+    grid-column: 1;
+
+}
+
+/*styling for the third product*/
+.LB-refill {
+    display: grid;
+    height: auto;
+    width: auto;
+    padding: 50px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 10% 60% 30%);
+    background-color: rgba(217, 200, 200, 0.1);
+
+}
+
+.LB-refill div:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: left;
+}
+
+.LB-refill div:nth-child(1) div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.LB-refill img {
+    height: 125px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 500px;
+
+}
+
+.LB-refill div:nth-child(2) {
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    align-items: center;
+    justify-items: center;
+}
+
+.LB-refill div:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1;
+    text-justify: left;
+    align-self: flex-end;
+}
+
+
+.LB-refill div:nth-child(4) {
+    grid-row: 3;
+    grid-column: 1;
+
+}
+
+#totalCost {
+    background-color: rgb(188, 183, 183);
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}
+
+#totalCost div {
+    font-size: 18px;
+}
+
+/*styling user info input boxes*/
+#userInfo {
+    background-color: rgb(188, 183, 183);
+    margin: 0px;
+    padding: 10px 10px;
+}
+
+/*Styling the contact page*/
+#contact-main {
+    background-color: rgba(217, 200, 200, 0.1);
+    margin: 0;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    color: rgb(57, 53, 53);
+}
+
+#contact-main h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.phone {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.user-contact-info h3 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.form-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;
+    margin: 0;
+}
+
+.form-2 div {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-2 input {
+    width: 50vw;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.form-2 div:nth-child(3) textarea {
+    height: 150px;
+    width: 50vw;
+    border: solid 1px black;
+    border-radius: 5px;
+    resize: none;
+
+}
+
+#user-contact-info button {
+    border: solid 1px black;
+    border-radius: 5px;
+    color: gray;
+    width: 10vw;
+
+}
+
+/*Styling the footer*/
+#global-footer {
+    background-color: rgba(217, 200, 200, 0.1);
+    font-size: 10px;
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+#global-footer div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#global-footer img {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+#global-footer p {
+    padding: 10px;
+}
+
+/*At a width of 770px or less, */
+@media screen and (max-width: 770px) {
+
+    /*main title will slightly shrink*/
+    header h1 {
+        font-size: 35px;
+    }
+
+    /*index.html all h2 will shrink*/
+    .index-main h2 {
+        font-size: 30px;
+    }
+}
+
+/*at a width of 480 pixels or less*/
+@media screen and (max-width: 480px) {
+
+    /*the navbar will shrink slightly and change colours*/
+    header nav menu li a {
+        border-width: solid 2px blue;
+        background-color: gray;
+        color: black;
+        font-size: 10px;
+    }
+
+    header nav menu {
+        justify-content: left;
+    }
+
+    /*shrinking font sizes on product page*/
+    .LB-Original,
+    .LB-Mini,
+    .LB-refill h2 {
+        font-size: 12px;
+    }
+
+    .LB-Original,
+    .LB-Mini,
+    .LB-refill h3 {
+        font-size: 8px;
+    }
+
+    .LB-Original,
+    .LB-Mini,
+    .LB-refill h4 {
+        font-size: 7px;
+    }
+
+    /*shrinking the image*/
+    .main-product img {
+        width: 75px;
+        height: auto;
+    }
+
+    /*On the about page, the font sizes will shrink
+    Padding will also lessen*/
+    .about-main p {
+        font-size: 17.5px;
+        padding: 17.5px;
+    }
+
+    .about-main h3 {
+        font-size: 30px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .about-main h2 {
+        font-size: 30px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    /*shrinking fonts on index.html*/
+    .index-main p {
+        font-size: 12.5px;
+    }
+
+    .index-main h2 {
+        font-size: 17.5px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    /*shrinking texts and padding on contact page*/
+    #contact-main h2 {
+        font-size: 20px;
+    }
+
+    .phone {
+        text-align: center;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .user-contact-info h3 {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    /*shrinking social images and pushing them closer together*/
+    #global-footer img {
+        width: 25px;
+        height: 25px;
+        padding: 12.5px;
+    }
+
+    /*legal disclaimer is also going to shrink*/
+    #global-footer p {
+        font-size: 6px;
+    }
+}
+
+/*at a screen width of 340 px or less*/
+@media screen and (max-width: 340px) {
+
+    /*navbar will shrink again*/
+    header nav menu li a {
+        font-size: 5px;
+    }
+
+    /*header main title will also shrink*/
+    header h1 {
+        font-size: 20px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    /*the main logo will also shrink*/
+    header div:nth-child(1) img {
+        height: 15px;
+        width: auto;
+    }
+
+    /*shrinking fonts and padding on the about page*/
+    .about-main p {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .about-main h3 {
+        font-size: 27.5px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .about-main h2 {
+        font-size: 27.5px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    /*shrinking fonts on the index.html page*/
+    .index-main p {
+        font-size: 10px;
+    }
+
+    .index-main h2 {
+        font-size: 15px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+}

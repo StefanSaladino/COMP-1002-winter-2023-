@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--loading meta using js-->
+
+<head id="meta">
+    <title>Lite Brite Retro Website</title>
+    <meta name="description" content="Product page">
+    <!--Add JS-->
+    <script src="./JS/custom-js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!--header will be loaded using JS-->
+    <header id="global-header">
+    </header>
+    <main class="main-product">
+        <!--form begins here-->
+        <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded">
+            <!--setting up a class for styling ease-->
+            <section class="LB-Original">
+                <div>
+                    <!--Title and description go in this div-->
+                    <h2 id="LB-OG">Ultimate classic Lite Brite</h2>
+                </div>
+                <div>
+                    <img src="./img/LB-kid.jpg" alt="Lite Brite Classic image">
+                </div>
+                <div>
+                    <!--info about the product-->
+                    <h3>
+                        Nostalgic and fun just like the original, the Lite-Brite Ultimate Classic allows
+                        you to create fun art using light. Newly designed Lite Brite is now brighter than
+                        ever with a bigger screen and more pegs!
+                    </h3>
+                </div>
+                <div>
+                    <!--user can select a quantity-->
+                    <h3>Price: $32.99 per unit</h3>
+                    <h4>Select quantity</h4>
+                    <select id="ogQuantity" name="ogQuantity">
+                        <option value="0">--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!--update total cost function will be called when add to cart button is clicked-->
+                    <button class="cart" type="button" onclick="calculateTotalCost()"><img src="./img/shopping-cart.png"
+                            alt="shopping cart button icon"></button>
+                </div>
+            </section>
+            <section class="LB-Mini">
+                <div>
+                    <h2 id="Mini">Lite Brite Mini</h2>
+                </div>
+                <div>
+                    <!--Title and description go in this div-->
+                    <img src="./img/LB-mini.jpg" alt="lite brite mini image">
+                </div>
+                <div>
+                    <h3>
+                        Create art with light using the Lite-Brite Mini, an adorably small version of your favorite
+                        classic toy! Inspired by the classic 1980's Lite-Brite toy, this Lite-Brite Mini includes 4
+                        design templates, 85 colorful mini pegs and a screen that measures 3.5" wide by 3" high.
+                    </h3>
+                </div>
+                <div>
+                    <h3>Price: $17.99 per unit</h3>
+                    <h4>Select quantity</h4>
+                    <select id="miniQuantity" name="miniQuantity">
+                        <option value="0">--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="cart" type="button" onclick="calculateTotalCost()"><img src="./img/shopping-cart.png"
+                            alt="shopping cart button icon"></button>
+                </div>
+            </section>
+            <section class="LB-refill">
+                <div>
+                    <!--Title and description go in this div-->
+                    <h2 id="Refill">Lite Brite Refill Pack</h2>
+                </div>
+                <div>
+                    <img src="./img/LB-pegs.jpg" alt="lite brite refill pack">
+                </div>
+                <div>
+                    <h3>
+                        This refill pack is the perfect accompaniment to the main board and comes with over 100
+                        round pegs in white, yellow, blue, pink, orange and green, 8 templates to follow on the
+                        tablet and an Art Guide with more pictures to follow.
+                    </h3>
+                </div>
+                <div>
+                    <h3>
+                        Price: $11.99 per unit (100 pegs per pack)
+                    </h3>
+                    <h4>Select quantity</h4>
+                    <select id="refillQuantity" name="refillQuantity">
+                        <option value="0">--</option>
+                        <option value="1">1 pack</option>
+                        <option value="2">2 packs</option>
+                        <option value="3">3 packs</option>
+                        <option value="4">4 packs</option>
+                        <option value="5">5 packs</option>
+                    </select>
+                    <button class="cart" type="button" onclick="calculateTotalCost()"><img src="./img/shopping-cart.png"
+                            alt="shopping cart button icon"></button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p id="totalCost"></p>
+                </div>
+            </section>
+            <section id="userInfo">
+                <div>
+                    <p><input type="text" placeholder="* Your Name" name="fullname" required></p>
+                    <p><input type="email" placeholder="* ABC@gmail.com" name="email" required></p>
+                    <p><input type="text" placeholder="* delivery address" name="address"></p>
+                </div>
+                <!--form is submitted with submit button-->
+                <div>
+                    <button type="submit">SUBMIT ORDER</button>
+                </div>
+            </section>
+            <!--form ends here-->
+        </form>
+    </main>
+    <!--footer loaded using JS-->
+    <footer id="global-footer"></footer>
+</body>
+
+</html>
