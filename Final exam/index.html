@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="This is the final exam for COMP 1002">
+    <title>HTML, CSS, and JS final exam</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--JS-->
+    <script src="./JS/custom-js.js"></script>
+</head>
+
+<body>
+    <header id="global-header"></header>
+    <main>
+        <section id="flex">
+            <h1>HTML, CSS, JS Fund. Final Exam</h1>
+        </section>
+        <section id="grid-1">
+            <div>
+                <h2>I Am A Title</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente repellat cum illum soluta. Labore libero aperiam,
+                    laboriosam consequuntur, quasi eveniet ullam suscipit, natus
+                    fugit delectus ut!</p>
+            </div>
+            <div>
+                <img src="./img/img2.jpg">
+            </div>
+        </section>
+        <section id="grid-2">
+            <div>
+                <img src="./img/img5.jpg">
+            </div>
+            <div>
+                <img src="./img/img4.jpg">
+            </div>
+            <div>
+                <img src="./img/img3.jpg">
+            </div>
+        </section>
+        <section id="form">
+            <form action="./php/somefile.php" method="POST" enctype="application/x-www-form-urlencoded">
+                <div class="input">
+                    <input type="text" placeholder="Name" name="fullname" required>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Password" name="Password" required>
+                </div>
+                <div>
+                    <input type="radio" id="True" name="T/F" value="True">
+                    <label for="True">True</label>
+                    <input type="radio" id="False" name="T/F" value="False">
+                    <label for="False">False</label>
+                </div>
+                <div>
+                    <textarea placeholder="Leave a message" name="message"></textarea>
+                </div>
+                <div>
+                    <button type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer id="global-footer"></footer>
+</body>
+
+</html>

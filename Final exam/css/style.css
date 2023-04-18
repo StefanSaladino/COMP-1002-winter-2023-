@@ -1,0 +1,221 @@
+html, body{
+    margin:0;
+    padding: 0;
+}
+
+main{
+    font-family: 'Roboto' sans-serif;
+}
+
+header{
+    font-family: 'Montserrat' sans-serif;
+    font-size: 12px;
+    background-color: #125784;
+    display:grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: (3, 25% 50% 25%);
+    grid-template-rows: (1, 100%);
+}
+
+header img{
+    padding:10px;
+    height: auto;
+    width: 8%;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+header nav{
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+header nav{
+    display: flex;
+}
+
+header nav menu{
+    text-align: center;
+    justify-content: center;
+}
+
+header nav menu li{
+    display: inline-block;
+    font-size: 15px;
+}
+
+header div nav menu li a{
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+}
+
+header div:nth-child(3){
+    height: 7.5px;
+    grid-row:1;
+    grid-column:3;
+    align-self: center;
+}
+
+#flex{
+    display: flex;
+    background-image: url("../img/img1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .7);
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto' sans-serif;
+}
+
+#flex img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-size: 35px;
+    color: white;
+    align-self: center;
+    justify-self: center;
+}
+
+#grid-1{
+    display: grid;
+    grid-template-columns: (2, 80% 20%);
+    grid-template-rows: (2, 30% 70%);
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+#grid-1 div:nth-child(1){
+    background-color: #f57f17;
+    justify-items: left;
+    width: 100%;
+    height:100%;
+}
+
+#grid-1 div:nth-child(1) h2{
+    grid-row: 1;
+    grid-column: 1;
+    padding: 5px;
+    color: white;
+    font-family: 'Roboto' sans-serif;
+    justify-self: left;
+
+}
+
+#grid-1 div:nth-child(1) p{
+    grid-row: 2;
+    grid-column: 1;
+    padding: 5px;
+    justify-self: left;
+    color: white;
+    font-family: 'Roboto' sans-serif;
+
+} 
+
+#grid-1 div:nth-child(2){
+    grid-row: 1/2;
+    grid-column: 2;
+    margin:0;
+}
+
+#grid-1 div:nth-child(2) img{
+    height: auto;
+    width: 20vw;
+}
+
+
+#grid-2{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: (3, 33%);
+    grid-template-rows: (1, 100%);
+}
+
+
+#grid-2 div:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#grid-2 img{
+    width: 100%;
+    height: auto;
+}
+    
+
+#grid-2 div:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#grid-2 div:nth-child(3){
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#form{
+    display: flex;
+    background-color:  #5e35b1;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding:0;
+    margin:0;
+}
+
+#form form{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    margin:0;
+}
+
+#form input{
+    flex-direction: column;
+    padding: 5px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer img{
+    height: 20vh;
+    width: auto;
+    display: inline-block;
+}
+
+footer p{
+    font-family: 'Roboto' sans-serif;
+    display: inline;
+    text-align: right;
+}
+
+/*If I had more time, I wouldve tried to style this better*/
+/*Max screen width of 450px*/
+@media screen and (max-width: 450px) {
+
+
+}
+
+
+
+
+
